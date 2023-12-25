@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Local Storage</title>
+</head>
+<body>
+    <div  class="container">
+        <h2 >‎ </h2>
+        <h2 >User Information</h2>
+        <form id="userForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" required>
+            <div style="display: flex; justify-content: center;">
+            <button  type="button" onclick="saveData()">Submit</button>
+        </div>
+        </form>
+
+        <div id="displayArea">
+            <h2>Stored Data</h2>
+            <table id="dataTable">
+            </table>
+            <div style="display: flex; justify-content: center;"></div>
+            <button id="btn2" onclick="retrieveData()">Retrieve & Display</button>
+        </div>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
